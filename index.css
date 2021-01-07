@@ -1,0 +1,27 @@
+#my-canvas {
+    background-color: white;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+}
+
+#add-background {
+    position: fixed; 
+    top: 10px; 
+    left: 10px; 
+    height: 40px; 
+    width: 40px;
+}
+
+#reset-background {
+    position: fixed; 
+    top: 60px; 
+    left: 10px; 
+    height: 40px; 
+    width: 40px;
+}
+
+button {
+    cursor: pointer;
+}

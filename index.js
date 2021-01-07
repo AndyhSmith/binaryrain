@@ -77,4 +77,25 @@ function gameLoop() {
     
 }
 
+function hideButtons() {
+    document.getElementById("add-background").style.display = "none";
+    document.getElementById("reset-background").style.display = "none";
+    document.getElementById("hide-buttons").style.display = "none";
+    document.getElementById("back-button").style.display = "none"; 
+}
+
+function showButtons() {
+    document.getElementById("add-background").style.display = "block";
+    document.getElementById("reset-background").style.display = "block";
+    document.getElementById("hide-buttons").style.display = "block"; 
+    document.getElementById("back-button").style.display = "block"; 
+}
+
+// Resizing
+function windowResized(){
+    canvas.width  = window.innerWidth;
+    canvas.height = window.innerHeight;
+}
+window.addEventListener("resize", windowResized);
+
 setInterval(gameLoop, 1000 / fps);

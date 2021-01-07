@@ -6,22 +6,61 @@
     z-index: -1;
 }
 
+#my-canvas .disable-dbl-tap-zoom {
+    touch-action: manipulation;
+}
+button .disable-dbl-tap-zoom {
+    touch-action: manipulation;
+}
+
 #add-background {
     position: fixed; 
     top: 10px; 
-    left: 10px; 
-    height: 40px; 
-    width: 40px;
+}
+#add-background:hover {
+    border-color: red;
 }
 
 #reset-background {
     position: fixed; 
     top: 60px; 
-    left: 10px; 
-    height: 40px; 
-    width: 40px;
+}
+#reset-background:hover {
+    border-color: orange;
+}
+
+#hide-buttons{
+    position: fixed; 
+    top: 110px; 
+}
+#hide-buttons:hover {
+    border-color: green;
+}
+
+#back-button{
+    position: fixed; 
+    top: 160px; 
+}
+#back-button:hover {
+    border-color: blue;
 }
 
 button {
     cursor: pointer;
+    width: 40px;
+    height: 40px;
+    left: 0px;
+    border-style: solid;
+    border-color: black;
+    border-left: 0px;
+    border-right-width: 10px;
+    transition: width .2s, border-color .4s;
+    outline: none;
+    box-shadow: none;
+    background-color: white;
 }
+
+button:hover {
+    width: 80px;
+}
+
